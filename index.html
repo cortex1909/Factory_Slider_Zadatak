@@ -6,23 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="assets/style/style.css" />
+  <link rel="stylesheet" href="assets/style/app.css" />
   <title>Factory Slider</title>
 </head>
 
 <body>
-
   <header>
     <div class="columns">
       <div class="col-1"></div>
       <div class="col-2"><span>Skup drugih elemenata na stranici</span></div>
     </div>
   </header>
-
   <main>
     <div class="columns">
       <div class="slider-container">
-
         <div class="top-row">
           <img src="assets/img/slider/slider-image-6.jpg" alt="slider6-image" class="img-slide">
           <img src="assets/img/slider/slider-image-7.jpg" alt="slider7-image" class="img-slide">
@@ -34,7 +31,6 @@
           <img src="assets/img/slider/slider-image-4.jpg" alt="slider4-image" class="img-slide">
           <img src="assets/img/slider/slider-image-5.jpg" alt="slider5-image" class="img-slide">
         </div>
-
         <div class="bottom-space">
           <div class="bottom-row">
             <img src="assets/img/slider/slider-image-1.jpg" alt="slider1-image" class="img-slide">
@@ -46,34 +42,27 @@
             <img src="assets/img/slider/slider-image-7.jpg" alt="slider7-image" class="img-slide">
             <img src="assets/img/slider/slider-image-8.jpg" alt="slider8-image" class="img-slide">
             <img src="assets/img/slider/slider-image-9.jpg" alt="slider9-image" class="img-slide">
-            </div>
-
-            <div class="buttons">
-              <button id="left" class="btn" disabled><img src="assets/img/strelice/arrow-gray-left.png"
-                  alt="left"></button>
-              <button id="right" class="btn"><img src="assets/img/strelice/arrow-blue-right.png"
-                  alt="right"></button>
-            
           </div>
-
-
-
+          <div class="buttons">
+            <button id="left" class="btn"> <img src="assets/img/strelice/arrow-gray-left.png" alt="left" id="grayLeft"> <img src="assets/img/strelice/arrow-blue-left.png" alt="left" id="blueLeft"> </button>
+            <button id="right" class="btn"> <img src="assets/img/strelice/arrow-gray-right.png" alt="right" id="grayRight"> <img src="assets/img/strelice/arrow-blue-right.png" alt="right" id="blueRight"> </button>
+          </div>
         </div>
       </div>
-
-
       <div class="info-container">
-        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit</h1>
-        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-          commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
         </p>
       </div>
     </div>
   </main>
-
   <footer><span>Skup drugih elemenata na stranici</span></footer>
-
-  <script src="assets/script/script.js"></script>
+  <script src="assets/src/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      console.log('Stranica ucitana')
+    });
+  </script>
 </body>
 
 </html>
