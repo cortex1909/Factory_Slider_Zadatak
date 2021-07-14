@@ -30,19 +30,19 @@ $(rightBtn).click(() => {
 $(leftBtn).click(() => {
     $(leftBtn).prop('disabled', true)
     let firstImageTop = $(".top-row .img-slide").first()
-    $(topImages).fadeOut('fast', function(){
-        $(topImages).fadeIn();
+    $(topImages).fadeOut(500, function(){
+        $(topImages).fadeIn(500);
     });
     $(firstImageTop).clone().appendTo(topImages)
     $(firstImageTop).remove()
 
     let firstImageBottom = $(".bottom-row .img-slide").first()
-    $(bottomImages).fadeOut('fast', function(){
-        $(bottomImages).fadeIn();
+    $(bottomImages).fadeOut(500, function(){
+        $(bottomImages).fadeIn(500);
     });
     $(firstImageBottom).clone().appendTo(bottomImages)
     $(firstImageBottom).remove()
-    
+
     setTimeout(() => {
         $(leftBtn).prop('disabled', false)
     }, 1000)
